@@ -15,7 +15,6 @@
 
 <script>
 import EChart from "@/components/chart/echart"
-import Material from "vuetify/es5/util/colors"
 
 export default {
   components: {
@@ -61,6 +60,12 @@ export default {
       return this.cardColor !== "white"
     },
     computeChartOption() {
+      this.teste();
+      return this.defaultOption
+    }
+  },
+  methods:{
+    teste(){
       switch (this.type) {
         case "bar":
           this.defaultOption.push(["series[0].type", "bar"])
@@ -110,7 +115,6 @@ export default {
           this.defaultOption.push(["xAxis.boundaryGap", false])
           break
       }
-      return this.defaultOption
     }
   }
 }
