@@ -24,3 +24,4 @@ yarn run test
 * [Vue](https://vuejs.org/index.html/)
 * [ECharts](http://echarts.baidu.com/option.html)
 * [Stylus](http://stylus-lang.com/)
+* [Vue Material Admin] (https://github.com/tookit/vue-material-admin/)
